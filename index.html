@@ -86,6 +86,11 @@
         .contact-form { flex: 1.5; min-width: 300px; }
         .contact-info { flex: 1; min-width: 300px; padding-left: 40px; border-left: 1px solid #eee; }
         
+        .hours-table { width: 100%; font-size: 0.9rem; border-collapse: collapse; margin-top: 10px; }
+        .hours-table td { padding: 5px 0; border-bottom: 1px solid #f1f5f9; }
+        .hours-table .day { font-weight: 600; color: var(--primary); }
+        .closed { color: #ef4444; font-weight: bold; }
+
         input, select, textarea { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; font-family: inherit; }
 
         .btn { 
@@ -113,7 +118,7 @@
 </header>
 
 <section class="hero" id="home">
-    <div class="status-bar"><span class="status-dot"></span> SUNBURY LAB OPEN: ACCEPTING REPAIRS</div>
+    <div class="status-bar"><span class="status-dot"></span> OPEN FOR DROP-OFFS: SUNBURY LAB</div>
     <h1>Professional Engineering.<br><span>Local Heart.</span></h1>
     <p>High-tech hardware repair for the modern family. Trusted by Sunbury to keep work, school, and gaming devices at peak performance.</p>
     <div style="width: 280px;"><a href="#contact"><button class="btn">Get a Fast Quote</button></a></div>
@@ -124,7 +129,7 @@
     <div class="services-grid">
         <div class="card">
             <img src="phone-repair.jpg" alt="Mobile">
-            <div class="card-content"><h3>Mobile Microsurgery</h3><p>Precision screen and logic board repairs for all smartphones.</p></div>
+            <div class="card-content"><h3>Mobile Microsurgery</h3><p>Precision screen and logic board repairs for all family smartphones.</p></div>
         </div>
         <div class="card">
             <img src="console-repair.jpg" alt="Gaming">
@@ -175,8 +180,16 @@
             <p><strong>Text/Call:</strong> (740) 936-7307</p>
             <p><strong>Email:</strong> store101@techbymrs.com</p>
             <hr style="opacity: 0.1; margin: 20px 0;">
-            <h3>Hours</h3>
-            <p>Mon - Fri: 9 AM - 6 PM<br>Sat: 10 AM - 3 PM</p>
+            <h3>Lab Hours</h3>
+            <table class="hours-table">
+                <tr><td class="day">Mon</td><td>11:00 am – 05:00 pm</td></tr>
+                <tr><td class="day">Tue</td><td>10:00 am – 06:00 pm</td></tr>
+                <tr><td class="day">Wed</td><td>10:00 am – 05:00 pm</td></tr>
+                <tr><td class="day">Thu</td><td>10:00 am – 06:00 pm</td></tr>
+                <tr><td class="day">Fri</td><td>10:00 am – 06:00 pm</td></tr>
+                <tr><td class="day">Sat</td><td class="closed">Closed</td></tr>
+                <tr><td class="day">Sun</td><td class="closed">Closed</td></tr>
+            </table>
         </div>
     </div>
 </div>
